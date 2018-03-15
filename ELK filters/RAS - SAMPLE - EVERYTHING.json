@@ -1,0 +1,221 @@
+[
+  {
+    "_id": "d7c37900-25f4-11e8-9cec-4d39f0db52d4",
+    "_type": "dashboard",
+    "_source": {
+      "title": "RAS - Dashboard - All Errors",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[\n  {\n    \"panelIndex\": \"1\",\n    \"gridData\": {\n      \"x\": 0,\n      \"y\": 0,\n      \"w\": 12,\n      \"h\": 2,\n      \"i\": \"1\"\n    },\n    \"id\": \"f83837a0-25f1-11e8-9cec-4d39f0db52d4\",\n    \"type\": \"visualization\",\n    \"version\": \"6.1.2\"\n  },\n  {\n    \"panelIndex\": \"2\",\n    \"gridData\": {\n      \"x\": 0,\n      \"y\": 2,\n      \"w\": 12,\n      \"h\": 4,\n      \"i\": \"2\"\n    },\n    \"version\": \"6.1.2\",\n    \"type\": \"search\",\n    \"id\": \"02d347d0-2620-11e8-9cec-4d39f0db52d4\"\n  }\n]",
+      "optionsJSON": "{\n  \"darkTheme\": false,\n  \"hidePanelTitles\": false,\n  \"useMargins\": true\n}",
+      "uiStateJSON": "{\n  \"P-1\": {\n    \"spy\": {\n      \"mode\": {\n        \"fill\": false,\n        \"name\": null\n      }\n    },\n    \"vis\": {\n      \"legendOpen\": true\n    }\n  }\n}",
+      "version": 1,
+      "timeRestore": true,
+      "timeTo": "now",
+      "timeFrom": "now-7d",
+      "refreshInterval": {
+        "display": "Off",
+        "pause": false,
+        "value": 0
+      },
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\n  \"query\": {\n    \"language\": \"lucene\",\n    \"query\": \"\"\n  },\n  \"filter\": [],\n  \"highlightAll\": true,\n  \"version\": true\n}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "c6d03eb0-26e6-11e8-9cec-4d39f0db52d4",
+    "_type": "dashboard",
+    "_source": {
+      "title": "RAS - Dashboard - Connections",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"gridData\":{\"h\":3,\"i\":\"1\",\"w\":6,\"x\":0,\"y\":0},\"id\":\"a65768c0-26e6-11e8-9cec-4d39f0db52d4\",\"panelIndex\":\"1\",\"type\":\"visualization\",\"version\":\"6.1.2\"},{\"gridData\":{\"h\":3,\"i\":\"2\",\"w\":12,\"x\":0,\"y\":3},\"id\":\"a3b58700-26e1-11e8-9cec-4d39f0db52d4\",\"panelIndex\":\"2\",\"type\":\"search\",\"version\":\"6.1.2\"},{\"gridData\":{\"w\":6,\"h\":3,\"x\":6,\"y\":0,\"i\":\"3\"},\"version\":\"6.1.2\",\"panelIndex\":\"3\",\"type\":\"visualization\",\"id\":\"d0f0d240-2715-11e8-9cec-4d39f0db52d4\"}]",
+      "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+      "uiStateJSON": "{}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[],\"highlightAll\":true,\"version\":true}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "62d74370-26de-11e8-9cec-4d39f0db52d4",
+    "_type": "search",
+    "_source": {
+      "title": "RAS - Search - All connection attempts",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "beat.hostname",
+        "RAS_Module",
+        "RAS_MessageText",
+        "RAS_LogSource"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"fba883b0-2216-11e8-9cec-4d39f0db52d4\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"\\\"connected from client\\\"\"},\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"fba883b0-2216-11e8-9cec-4d39f0db52d4\",\"key\":\"RAS_LogSource.keyword\",\"negate\":true,\"params\":{\"query\":\"RASMsi.log\",\"type\":\"phrase\"},\"type\":\"phrase\",\"value\":\"RASMsi.log\"},\"query\":{\"match\":{\"RAS_LogSource.keyword\":{\"query\":\"RASMsi.log\",\"type\":\"phrase\"}}}},{\"query\":{\"wildcard\":{\"RAS_MessageText\":\"*connected from client*\"}},\"meta\":{\"negate\":false,\"index\":\"fba883b0-2216-11e8-9cec-4d39f0db52d4\",\"disabled\":true,\"alias\":null,\"type\":\"custom\",\"key\":\"query\",\"value\":\"{\\\"wildcard\\\":{\\\"RAS_MessageText\\\":\\\"*connected from client*\\\"}}\"},\"$state\":{\"store\":\"appState\"}},{\"meta\":{\"index\":\"fba883b0-2216-11e8-9cec-4d39f0db52d4\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"RAS_MessageText\",\"value\":\"\\\"connected from client\\\"\",\"params\":{\"query\":\"\\\"connected from client\\\"\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"RAS_MessageText\":{\"query\":\"\\\"connected from client\\\"\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "02d347d0-2620-11e8-9cec-4d39f0db52d4",
+    "_type": "search",
+    "_source": {
+      "title": "RAS - Search - All Error-level events",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "beat.hostname",
+        "RAS_Module",
+        "RAS_MessageText",
+        "RAS_LogSource"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\n  \"index\": \"fba883b0-2216-11e8-9cec-4d39f0db52d4\",\n  \"highlightAll\": true,\n  \"version\": true,\n  \"query\": {\n    \"language\": \"lucene\",\n    \"query\": \"\"\n  },\n  \"filter\": [\n    {\n      \"$state\": {\n        \"store\": \"appState\"\n      },\n      \"meta\": {\n        \"alias\": null,\n        \"disabled\": false,\n        \"index\": \"fba883b0-2216-11e8-9cec-4d39f0db52d4\",\n        \"key\": \"RAS_LogSource.keyword\",\n        \"negate\": true,\n        \"params\": {\n          \"query\": \"RASMsi.log\",\n          \"type\": \"phrase\"\n        },\n        \"type\": \"phrase\",\n        \"value\": \"RASMsi.log\"\n      },\n      \"query\": {\n        \"match\": {\n          \"RAS_LogSource.keyword\": {\n            \"query\": \"RASMsi.log\",\n            \"type\": \"phrase\"\n          }\n        }\n      }\n    },\n    {\n      \"meta\": {\n        \"index\": \"fba883b0-2216-11e8-9cec-4d39f0db52d4\",\n        \"negate\": false,\n        \"disabled\": false,\n        \"alias\": null,\n        \"type\": \"phrase\",\n        \"key\": \"Severity.keyword\",\n        \"value\": \"E\",\n        \"params\": {\n          \"query\": \"E\",\n          \"type\": \"phrase\"\n        }\n      },\n      \"query\": {\n        \"match\": {\n          \"Severity.keyword\": {\n            \"query\": \"E\",\n            \"type\": \"phrase\"\n          }\n        }\n      },\n      \"$state\": {\n        \"store\": \"appState\"\n      }\n    }\n  ]\n}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "aec9cc90-2714-11e8-9cec-4d39f0db52d4",
+    "_type": "search",
+    "_source": {
+      "title": "RAS - Search - All Client Errors",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "RAS_Module",
+        "RAS_MessageText",
+        "Severity"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"fba883b0-2216-11e8-9cec-4d39f0db52d4\",\"highlightAll\":true,\"version\":true,\"query\":{\"query\":\"(RAS_Module: SHELL or RAS_Module: CLIENTGW) AND (Severity: E OR Severity: W) OR (RAS_MessageText: \\\"0x0000052e\\\") OR ((RAS_MessageText: \\\"Failed to open\\\") AND (RAS_MessageText: \\\"application\\\"))\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "a3b58700-26e1-11e8-9cec-4d39f0db52d4",
+    "_type": "search",
+    "_source": {
+      "title": "RAS - Search - User connection errors",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "beat.hostname",
+        "RAS_Module",
+        "RAS_MessageText",
+        "Severity"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"fba883b0-2216-11e8-9cec-4d39f0db52d4\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"(RAS_Module: SHELL or RAS_Module: CLIENTGW) AND (Severity: E OR Severity: W) OR (RAS_MessageText: \\\"0x0000052e\\\") OR ((RAS_MessageText: \\\"Failed to open\\\") AND (RAS_MessageText: \\\"application\\\"))\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "f83837a0-25f1-11e8-9cec-4d39f0db52d4",
+    "_type": "visualization",
+    "_source": {
+      "title": "RAS - Visualization - All Errors per module per time",
+      "visState": "{\n  \"title\": \"RAS All Errors per module per time\",\n  \"type\": \"histogram\",\n  \"params\": {\n    \"type\": \"histogram\",\n    \"grid\": {\n      \"categoryLines\": false,\n      \"style\": {\n        \"color\": \"#eee\"\n      }\n    },\n    \"categoryAxes\": [\n      {\n        \"id\": \"CategoryAxis-1\",\n        \"type\": \"category\",\n        \"position\": \"bottom\",\n        \"show\": true,\n        \"style\": {},\n        \"scale\": {\n          \"type\": \"linear\"\n        },\n        \"labels\": {\n          \"show\": false,\n          \"truncate\": 100,\n          \"filter\": true\n        },\n        \"title\": {}\n      }\n    ],\n    \"valueAxes\": [\n      {\n        \"id\": \"ValueAxis-1\",\n        \"name\": \"LeftAxis-1\",\n        \"type\": \"value\",\n        \"position\": \"left\",\n        \"show\": true,\n        \"style\": {},\n        \"scale\": {\n          \"type\": \"linear\",\n          \"mode\": \"normal\",\n          \"defaultYExtents\": true,\n          \"setYExtents\": false\n        },\n        \"labels\": {\n          \"show\": true,\n          \"rotate\": 0,\n          \"filter\": false,\n          \"truncate\": 100\n        },\n        \"title\": {\n          \"text\": \"Events\"\n        }\n      }\n    ],\n    \"seriesParams\": [\n      {\n        \"show\": \"true\",\n        \"type\": \"histogram\",\n        \"mode\": \"stacked\",\n        \"data\": {\n          \"label\": \"Count\",\n          \"id\": \"1\"\n        },\n        \"valueAxis\": \"ValueAxis-1\",\n        \"drawLinesBetweenPoints\": true,\n        \"showCircles\": true\n      }\n    ],\n    \"addTooltip\": true,\n    \"addLegend\": true,\n    \"legendPosition\": \"right\",\n    \"times\": [],\n    \"addTimeMarker\": false\n  },\n  \"aggs\": [\n    {\n      \"id\": \"1\",\n      \"enabled\": true,\n      \"type\": \"count\",\n      \"schema\": \"metric\",\n      \"params\": {}\n    },\n    {\n      \"id\": \"2\",\n      \"enabled\": true,\n      \"type\": \"date_histogram\",\n      \"schema\": \"split\",\n      \"params\": {\n        \"field\": \"@timestamp\",\n        \"interval\": \"h\",\n        \"customInterval\": \"2h\",\n        \"min_doc_count\": 1,\n        \"extended_bounds\": {},\n        \"row\": false\n      }\n    },\n    {\n      \"id\": \"3\",\n      \"enabled\": true,\n      \"type\": \"terms\",\n      \"schema\": \"group\",\n      \"params\": {\n        \"field\": \"RAS_Module.keyword\",\n        \"size\": 10,\n        \"order\": \"desc\",\n        \"orderBy\": \"1\"\n      }\n    }\n  ]\n}",
+      "uiStateJSON": "{\n  \"vis\": {\n    \"colors\": {\n      \"TSAGENT\": \"#BF1B00\",\n      \"GENERIC\": \"#64B0C8\",\n      \"PRINTING\": \"#EAB839\"\n    }\n  }\n}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\n  \"index\": \"fba883b0-2216-11e8-9cec-4d39f0db52d4\",\n  \"filter\": [\n    {\n      \"meta\": {\n        \"index\": \"fba883b0-2216-11e8-9cec-4d39f0db52d4\",\n        \"negate\": false,\n        \"disabled\": false,\n        \"alias\": null,\n        \"type\": \"phrase\",\n        \"key\": \"Severity.keyword\",\n        \"value\": \"E\",\n        \"params\": {\n          \"query\": \"E\",\n          \"type\": \"phrase\"\n        }\n      },\n      \"query\": {\n        \"match\": {\n          \"Severity.keyword\": {\n            \"query\": \"E\",\n            \"type\": \"phrase\"\n          }\n        }\n      },\n      \"$state\": {\n        \"store\": \"appState\"\n      }\n    }\n  ],\n  \"query\": {\n    \"query\": \"\",\n    \"language\": \"lucene\"\n  }\n}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "36879da0-26df-11e8-9cec-4d39f0db52d4",
+    "_type": "visualization",
+    "_source": {
+      "title": "RAS - Visualization - All connection attempts",
+      "visState": "{\"title\":\"RAS - Visualization - All connection attempts\",\"type\":\"area\",\"params\":{\"type\":\"area\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Count\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"area\",\"mode\":\"stacked\",\"data\":{\"label\":\"Count\",\"id\":\"1\"},\"drawLinesBetweenPoints\":true,\"showCircles\":true,\"interpolate\":\"linear\",\"valueAxis\":\"ValueAxis-1\"}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"fba883b0-2216-11e8-9cec-4d39f0db52d4\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"RAS_MessageText\",\"value\":\"connected from client\",\"params\":{\"query\":\"connected from client\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"RAS_MessageText\":{\"query\":\"connected from client\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"index\":\"fba883b0-2216-11e8-9cec-4d39f0db52d4\",\"highlightAll\":true,\"version\":true}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "a65768c0-26e6-11e8-9cec-4d39f0db52d4",
+    "_type": "visualization",
+    "_source": {
+      "title": "RAS - Visualization - Connection attempts to Sessions",
+      "visState": "{\"title\":\"RAS - Visualization - Connection attempts to Sessions\",\"type\":\"area\",\"params\":{\"type\":\"area\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"},\"valueAxis\":\"ValueAxis-1\"},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\",\"setYExtents\":false,\"defaultYExtents\":true},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":true,\"truncate\":100},\"title\":{\"text\":\"Count\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"line\",\"mode\":\"normal\",\"data\":{\"label\":\"Count\",\"id\":\"1\"},\"drawLinesBetweenPoints\":true,\"showCircles\":true,\"interpolate\":\"linear\",\"valueAxis\":\"ValueAxis-1\"}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"top\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"3\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"4\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"group\",\"params\":{\"filters\":[{\"input\":{\"query\":\"Ras_MessageText: connected from client\"},\"label\":\"Connection attempts\"},{\"input\":{\"query\":\"Ras_MessageText: Found new session\"},\"label\":\"New sessions on TS Servers\"}]}}]}",
+      "uiStateJSON": "{\"vis\":{\"colors\":{\"Count\":\"#E24D42\",\"Connection attempts\":\"#E0752D\",\"New sessions on TS Servers\":\"#629E51\"}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"fba883b0-2216-11e8-9cec-4d39f0db52d4\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "d0f0d240-2715-11e8-9cec-4d39f0db52d4",
+    "_type": "visualization",
+    "_source": {
+      "title": "RAS - Visualization - All Client Connection Errors",
+      "visState": "{\"title\":\"RAS - Visualization - All Client Connection Errors\",\"type\":\"area\",\"params\":{\"type\":\"area\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Errors\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"Count\",\"id\":\"1\"},\"drawLinesBetweenPoints\":true,\"showCircles\":true,\"interpolate\":\"linear\",\"valueAxis\":\"ValueAxis-1\"}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}]}",
+      "uiStateJSON": "{\"vis\":{\"colors\":{\"Count\":\"#BF1B00\"},\"legendOpen\":false}}",
+      "description": "",
+      "savedSearchId": "a3b58700-26e1-11e8-9cec-4d39f0db52d4",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  }
+]

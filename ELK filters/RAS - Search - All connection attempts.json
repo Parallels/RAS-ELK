@@ -1,0 +1,25 @@
+[
+  {
+    "_id": "62d74370-26de-11e8-9cec-4d39f0db52d4",
+    "_type": "search",
+    "_source": {
+      "title": "RAS - Search - All connection attempts",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "beat.hostname",
+        "RAS_Module",
+        "RAS_MessageText",
+        "RAS_LogSource"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"fba883b0-2216-11e8-9cec-4d39f0db52d4\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"\\\"connected from client\\\"\"},\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"fba883b0-2216-11e8-9cec-4d39f0db52d4\",\"key\":\"RAS_LogSource.keyword\",\"negate\":true,\"params\":{\"query\":\"RASMsi.log\",\"type\":\"phrase\"},\"type\":\"phrase\",\"value\":\"RASMsi.log\"},\"query\":{\"match\":{\"RAS_LogSource.keyword\":{\"query\":\"RASMsi.log\",\"type\":\"phrase\"}}}},{\"query\":{\"wildcard\":{\"RAS_MessageText\":\"*connected from client*\"}},\"meta\":{\"negate\":false,\"index\":\"fba883b0-2216-11e8-9cec-4d39f0db52d4\",\"disabled\":true,\"alias\":null,\"type\":\"custom\",\"key\":\"query\",\"value\":\"{\\\"wildcard\\\":{\\\"RAS_MessageText\\\":\\\"*connected from client*\\\"}}\"},\"$state\":{\"store\":\"appState\"}},{\"meta\":{\"index\":\"fba883b0-2216-11e8-9cec-4d39f0db52d4\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"RAS_MessageText\",\"value\":\"\\\"connected from client\\\"\",\"params\":{\"query\":\"\\\"connected from client\\\"\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"RAS_MessageText\":{\"query\":\"\\\"connected from client\\\"\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  }
+]

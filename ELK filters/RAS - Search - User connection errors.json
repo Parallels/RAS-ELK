@@ -1,0 +1,25 @@
+[
+  {
+    "_id": "a3b58700-26e1-11e8-9cec-4d39f0db52d4",
+    "_type": "search",
+    "_source": {
+      "title": "RAS - Search - User connection errors",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "beat.hostname",
+        "RAS_Module",
+        "RAS_MessageText",
+        "Severity"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"fba883b0-2216-11e8-9cec-4d39f0db52d4\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"(RAS_Module: SHELL or RAS_Module: CLIENTGW) AND (Severity: E OR Severity: W) OR (RAS_MessageText: \\\"0x0000052e\\\") OR ((RAS_MessageText: \\\"Failed to open\\\") AND (RAS_MessageText: \\\"application\\\"))\"},\"filter\":[]}"
+      }
+    }
+  }
+]

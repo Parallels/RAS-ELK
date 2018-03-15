@@ -1,0 +1,19 @@
+[
+  {
+    "_id": "c6d03eb0-26e6-11e8-9cec-4d39f0db52d4",
+    "_type": "dashboard",
+    "_source": {
+      "title": "RAS - Dashboard - Connections",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"gridData\":{\"h\":3,\"i\":\"1\",\"w\":6,\"x\":0,\"y\":0},\"id\":\"a65768c0-26e6-11e8-9cec-4d39f0db52d4\",\"panelIndex\":\"1\",\"type\":\"visualization\",\"version\":\"6.1.2\"},{\"gridData\":{\"h\":3,\"i\":\"2\",\"w\":12,\"x\":0,\"y\":3},\"id\":\"a3b58700-26e1-11e8-9cec-4d39f0db52d4\",\"panelIndex\":\"2\",\"type\":\"search\",\"version\":\"6.1.2\"},{\"gridData\":{\"w\":6,\"h\":3,\"x\":6,\"y\":0,\"i\":\"3\"},\"version\":\"6.1.2\",\"panelIndex\":\"3\",\"type\":\"visualization\",\"id\":\"d0f0d240-2715-11e8-9cec-4d39f0db52d4\"}]",
+      "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+      "uiStateJSON": "{}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[],\"highlightAll\":true,\"version\":true}"
+      }
+    }
+  }
+]

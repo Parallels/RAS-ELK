@@ -1,0 +1,25 @@
+[
+  {
+    "_id": "02d347d0-2620-11e8-9cec-4d39f0db52d4",
+    "_type": "search",
+    "_source": {
+      "title": "RAS - Search - All Error-level events",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "beat.hostname",
+        "RAS_Module",
+        "RAS_MessageText",
+        "RAS_LogSource"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\n  \"index\": \"fba883b0-2216-11e8-9cec-4d39f0db52d4\",\n  \"highlightAll\": true,\n  \"version\": true,\n  \"query\": {\n    \"language\": \"lucene\",\n    \"query\": \"\"\n  },\n  \"filter\": [\n    {\n      \"$state\": {\n        \"store\": \"appState\"\n      },\n      \"meta\": {\n        \"alias\": null,\n        \"disabled\": false,\n        \"index\": \"fba883b0-2216-11e8-9cec-4d39f0db52d4\",\n        \"key\": \"RAS_LogSource.keyword\",\n        \"negate\": true,\n        \"params\": {\n          \"query\": \"RASMsi.log\",\n          \"type\": \"phrase\"\n        },\n        \"type\": \"phrase\",\n        \"value\": \"RASMsi.log\"\n      },\n      \"query\": {\n        \"match\": {\n          \"RAS_LogSource.keyword\": {\n            \"query\": \"RASMsi.log\",\n            \"type\": \"phrase\"\n          }\n        }\n      }\n    },\n    {\n      \"meta\": {\n        \"index\": \"fba883b0-2216-11e8-9cec-4d39f0db52d4\",\n        \"negate\": false,\n        \"disabled\": false,\n        \"alias\": null,\n        \"type\": \"phrase\",\n        \"key\": \"Severity.keyword\",\n        \"value\": \"E\",\n        \"params\": {\n          \"query\": \"E\",\n          \"type\": \"phrase\"\n        }\n      },\n      \"query\": {\n        \"match\": {\n          \"Severity.keyword\": {\n            \"query\": \"E\",\n            \"type\": \"phrase\"\n          }\n        }\n      },\n      \"$state\": {\n        \"store\": \"appState\"\n      }\n    }\n  ]\n}"
+      }
+    }
+  }
+]

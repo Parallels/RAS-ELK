@@ -1,0 +1,24 @@
+[
+  {
+    "_id": "aec9cc90-2714-11e8-9cec-4d39f0db52d4",
+    "_type": "search",
+    "_source": {
+      "title": "RAS - Search - All Client Errors",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "RAS_Module",
+        "RAS_MessageText",
+        "Severity"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"fba883b0-2216-11e8-9cec-4d39f0db52d4\",\"highlightAll\":true,\"version\":true,\"query\":{\"query\":\"(RAS_Module: SHELL or RAS_Module: CLIENTGW) AND (Severity: E OR Severity: W) OR (RAS_MessageText: \\\"0x0000052e\\\") OR ((RAS_MessageText: \\\"Failed to open\\\") AND (RAS_MessageText: \\\"application\\\"))\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    }
+  }
+]

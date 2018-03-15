@@ -1,0 +1,26 @@
+[
+  {
+    "_id": "d7c37900-25f4-11e8-9cec-4d39f0db52d4",
+    "_type": "dashboard",
+    "_source": {
+      "title": "RAS - Dashboard - All Errors",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[\n  {\n    \"panelIndex\": \"1\",\n    \"gridData\": {\n      \"x\": 0,\n      \"y\": 0,\n      \"w\": 12,\n      \"h\": 2,\n      \"i\": \"1\"\n    },\n    \"id\": \"f83837a0-25f1-11e8-9cec-4d39f0db52d4\",\n    \"type\": \"visualization\",\n    \"version\": \"6.1.2\"\n  },\n  {\n    \"panelIndex\": \"2\",\n    \"gridData\": {\n      \"x\": 0,\n      \"y\": 2,\n      \"w\": 12,\n      \"h\": 4,\n      \"i\": \"2\"\n    },\n    \"version\": \"6.1.2\",\n    \"type\": \"search\",\n    \"id\": \"02d347d0-2620-11e8-9cec-4d39f0db52d4\"\n  }\n]",
+      "optionsJSON": "{\n  \"darkTheme\": false,\n  \"hidePanelTitles\": false,\n  \"useMargins\": true\n}",
+      "uiStateJSON": "{\n  \"P-1\": {\n    \"spy\": {\n      \"mode\": {\n        \"fill\": false,\n        \"name\": null\n      }\n    },\n    \"vis\": {\n      \"legendOpen\": true\n    }\n  }\n}",
+      "version": 1,
+      "timeRestore": true,
+      "timeTo": "now",
+      "timeFrom": "now-7d",
+      "refreshInterval": {
+        "display": "Off",
+        "pause": false,
+        "value": 0
+      },
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\n  \"query\": {\n    \"language\": \"lucene\",\n    \"query\": \"\"\n  },\n  \"filter\": [],\n  \"highlightAll\": true,\n  \"version\": true\n}"
+      }
+    }
+  }
+]
