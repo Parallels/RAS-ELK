@@ -42,12 +42,6 @@ filebeat.prospectors:
 
   # Optional additional fields. These fields can be freely picked
   # to add additional information to the crawled log files for filtering
-  fields:
-    level: info
-    review: 1
-    stand: ekorepanov_elk_test
-    stand_owner: ekorepanov
-
   encoding: utf-16be
   ### Multiline options
 
@@ -155,8 +149,7 @@ setup.kibana:
 #----------------------------- Logstash output --------------------------------
 output.logstash:
   # The Logstash hosts
-  #hosts: ["ras-elk.prls.net:5044"]
-  hosts: ["52.174.70.41:5044"]
+  hosts: ["<IP_ADDRESS>:5044"]
 
 
   # Optional SSL. By default is off.
