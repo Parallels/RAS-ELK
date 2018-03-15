@@ -91,7 +91,7 @@
       ],
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\n  \"index\": \"fba883b0-2216-11e8-9cec-4d39f0db52d4\",\n  \"highlightAll\": true,\n  \"version\": true,\n  \"query\": {\n    \"language\": \"lucene\",\n    \"query\": \"\"\n  },\n  \"filter\": [\n    {\n      \"$state\": {\n        \"store\": \"appState\"\n      },\n      \"meta\": {\n        \"alias\": null,\n        \"disabled\": false,\n        \"index\": \"fba883b0-2216-11e8-9cec-4d39f0db52d4\",\n        \"key\": \"RAS_LogSource.keyword\",\n        \"negate\": true,\n        \"params\": {\n          \"query\": \"RASMsi.log\",\n          \"type\": \"phrase\"\n        },\n        \"type\": \"phrase\",\n        \"value\": \"RASMsi.log\"\n      },\n      \"query\": {\n        \"match\": {\n          \"RAS_LogSource.keyword\": {\n            \"query\": \"RASMsi.log\",\n            \"type\": \"phrase\"\n          }\n        }\n      }\n    },\n    {\n      \"meta\": {\n        \"index\": \"fba883b0-2216-11e8-9cec-4d39f0db52d4\",\n        \"negate\": false,\n        \"disabled\": false,\n        \"alias\": null,\n        \"type\": \"phrase\",\n        \"key\": \"Severity.keyword\",\n        \"value\": \"E\",\n        \"params\": {\n          \"query\": \"E\",\n          \"type\": \"phrase\"\n        }\n      },\n      \"query\": {\n        \"match\": {\n          \"Severity.keyword\": {\n            \"query\": \"E\",\n            \"type\": \"phrase\"\n          }\n        }\n      },\n      \"$state\": {\n        \"store\": \"appState\"\n      }\n    }\n  ]\n}"
+        "searchSourceJSON": "{\n  \"index\": \"fba883b0-2216-11e8-9cec-4d39f0db52d4\",\n  \"highlightAll\": true,\n  \"version\": true,\n  \"query\": {\n    \"language\": \"lucene\",\n    \"query\": \"\"\n  },\n  \"filter\": [\n    {\n      \"$state\": {\n        \"store\": \"appState\"\n      },\n      \"meta\": {\n        \"alias\": null,\n        \"disabled\": false,\n        \"index\": \"fba883b0-2216-11e8-9cec-4d39f0db52d4\",\n        \"key\": \"RAS_LogSource.keyword\",\n        \"negate\": true,\n        \"params\": {\n          \"query\": \"RASMsi.log\",\n          \"type\": \"phrase\"\n        },\n        \"type\": \"phrase\",\n        \"value\": \"RASMsi.log\"\n      },\n      \"query\": {\n        \"match\": {\n          \"RAS_LogSource.keyword\": {\n            \"query\": \"RASMsi.log\",\n            \"type\": \"phrase\"\n          }\n        }\n      }\n    },\n    {\n      \"meta\": {\n        \"index\": \"fba883b0-2216-11e8-9cec-4d39f0db52d4\",\n        \"negate\": false,\n        \"disabled\": false,\n        \"alias\": null,\n        \"type\": \"phrase\",\n        \"key\": \"RAS_Severity.keyword\",\n        \"value\": \"E\",\n        \"params\": {\n          \"query\": \"E\",\n          \"type\": \"phrase\"\n        }\n      },\n      \"query\": {\n        \"match\": {\n          \"RAS_Severity.keyword\": {\n            \"query\": \"E\",\n            \"type\": \"phrase\"\n          }\n        }\n      },\n      \"$state\": {\n        \"store\": \"appState\"\n      }\n    }\n  ]\n}"
       }
     },
     "_meta": {
@@ -108,7 +108,7 @@
       "columns": [
         "RAS_Module",
         "RAS_MessageText",
-        "Severity"
+        "RAS_Severity"
       ],
       "sort": [
         "@timestamp",
@@ -116,7 +116,7 @@
       ],
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"fba883b0-2216-11e8-9cec-4d39f0db52d4\",\"highlightAll\":true,\"version\":true,\"query\":{\"query\":\"(RAS_Module: SHELL or RAS_Module: CLIENTGW) AND (Severity: E OR Severity: W) OR (RAS_MessageText: \\\"0x0000052e\\\") OR ((RAS_MessageText: \\\"Failed to open\\\") AND (RAS_MessageText: \\\"application\\\"))\",\"language\":\"lucene\"},\"filter\":[]}"
+        "searchSourceJSON": "{\"index\":\"fba883b0-2216-11e8-9cec-4d39f0db52d4\",\"highlightAll\":true,\"version\":true,\"query\":{\"query\":\"(RAS_Module: SHELL or RAS_Module: CLIENTGW) AND (RAS_Severity: E OR RAS_Severity: W) OR (RAS_MessageText: \\\"0x0000052e\\\") OR ((RAS_MessageText: \\\"Failed to open\\\") AND (RAS_MessageText: \\\"application\\\"))\",\"language\":\"lucene\"},\"filter\":[]}"
       }
     },
     "_meta": {
@@ -134,7 +134,7 @@
         "beat.hostname",
         "RAS_Module",
         "RAS_MessageText",
-        "Severity"
+        "RAS_Severity"
       ],
       "sort": [
         "@timestamp",
@@ -142,7 +142,7 @@
       ],
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"fba883b0-2216-11e8-9cec-4d39f0db52d4\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"(RAS_Module: SHELL or RAS_Module: CLIENTGW) AND (Severity: E OR Severity: W) OR (RAS_MessageText: \\\"0x0000052e\\\") OR ((RAS_MessageText: \\\"Failed to open\\\") AND (RAS_MessageText: \\\"application\\\"))\"},\"filter\":[]}"
+        "searchSourceJSON": "{\"index\":\"fba883b0-2216-11e8-9cec-4d39f0db52d4\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"(RAS_Module: SHELL or RAS_Module: CLIENTGW) AND (RAS_Severity: E OR RAS_Severity: W) OR (RAS_MessageText: \\\"0x0000052e\\\") OR ((RAS_MessageText: \\\"Failed to open\\\") AND (RAS_MessageText: \\\"application\\\"))\"},\"filter\":[]}"
       }
     },
     "_meta": {
@@ -159,7 +159,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\n  \"index\": \"fba883b0-2216-11e8-9cec-4d39f0db52d4\",\n  \"filter\": [\n    {\n      \"meta\": {\n        \"index\": \"fba883b0-2216-11e8-9cec-4d39f0db52d4\",\n        \"negate\": false,\n        \"disabled\": false,\n        \"alias\": null,\n        \"type\": \"phrase\",\n        \"key\": \"Severity.keyword\",\n        \"value\": \"E\",\n        \"params\": {\n          \"query\": \"E\",\n          \"type\": \"phrase\"\n        }\n      },\n      \"query\": {\n        \"match\": {\n          \"Severity.keyword\": {\n            \"query\": \"E\",\n            \"type\": \"phrase\"\n          }\n        }\n      },\n      \"$state\": {\n        \"store\": \"appState\"\n      }\n    }\n  ],\n  \"query\": {\n    \"query\": \"\",\n    \"language\": \"lucene\"\n  }\n}"
+        "searchSourceJSON": "{\n  \"index\": \"fba883b0-2216-11e8-9cec-4d39f0db52d4\",\n  \"filter\": [\n    {\n      \"meta\": {\n        \"index\": \"fba883b0-2216-11e8-9cec-4d39f0db52d4\",\n        \"negate\": false,\n        \"disabled\": false,\n        \"alias\": null,\n        \"type\": \"phrase\",\n        \"key\": \"RAS_Severity.keyword\",\n        \"value\": \"E\",\n        \"params\": {\n          \"query\": \"E\",\n          \"type\": \"phrase\"\n        }\n      },\n      \"query\": {\n        \"match\": {\n          \"RAS_Severity.keyword\": {\n            \"query\": \"E\",\n            \"type\": \"phrase\"\n          }\n        }\n      },\n      \"$state\": {\n        \"store\": \"appState\"\n      }\n    }\n  ],\n  \"query\": {\n    \"query\": \"\",\n    \"language\": \"lucene\"\n  }\n}"
       }
     },
     "_meta": {
