@@ -27,6 +27,7 @@ filebeat.prospectors:
   paths:
     #- /var/log/*.log
     - c:\ProgramData\Parallels\RASLogs\*.log
+    - c:\ProgramData\Parallels\RASLogs\HTML5GW.txt
 
   # Exclude lines. A list of regular expressions to match. It drops the lines that are
   # matching any regular expression from the list.
